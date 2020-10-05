@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Aplikasi Monitoring Fasilitas - Bandara Soekarno Hatta</string>
+    <string name="about">Aplikasi Monitoring - Bandara Soekarno Hatta berfungsi untuk melakukan kontrol terhadap kerusakan dan perbaikan setiap properti yang terdapat pada bandara Soekarno-Hatta mencakup Terminal 1, Terminal 2, dan Terminal 3. Dalam aplikasi ini terdapat 3 hak akses yaitu Manager, Supervisor, dan Teknisi yang memliki fungsinya masing masing.</string>
+    <string-array name="Area_array">
+        <item>Terminal1</item>
+        <item>Terminal2</item>
+        <item>Terminal3</item>
+    </string-array>
+    <string-array name="HakAkses_array">
+        <item>Terminal1</item>
+        <item>Terminal2</item>
+        <item>Terminal3</item>
+        <item>Summary</item>
+    </string-array>
+    <string-array name="namabarang_array">
+        <item>DigitalBanner001</item>
+        <item>DigitalBanner002</item>
+        <item>DigitalBanner003</item>
+    </string-array>
+
+    <string-array name="Bulan_array">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+
+    <string-array name="Hari_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="Shift_array">
+        <item>Pagi(07.00-19.00)</item>
+        <item>Malam(19.00-07.00)</item>
+    </string-array>
+
+    <string-array name="Status_array">
+        <item>NORMAL</item>
+        <item>ERROR</item>
+    </string-array>
+
+    <string-array name="Tujuan_array">
+        <item>Unit1</item>
+        <item>Unit2</item>
+        <item>Unit3</item>
+    </string-array>
+
+    <string name="About">
+<![CDATA[
+<html>
+ <head></head>
+ <body style="text-align:justify;color:gray;background-color:black;">
+  Aplikasi Monitoring - Bandara Soekarno Hatta berfungsi untuk melakukan kontrol terhadap kerusakan dan perbaikan setiap properti yang terdapat pada bandara Soekarno-Hatta mencakup Terminal 1, Terminal 2, dan Terminal 3. Dalam aplikasi ini terdapat 3 hak akses yaitu Manager, Supervisor, dan Teknisi yang memliki fungsinya masing masing.
+ </body>
+</html>
+]]>
+</string>
+
+    <string name="channel_name">
+        <item>channel_name</item>
+    </string>
+
+    <string name="channel_description">
+        <item>channel_description</item>
+    </string>
+</resources>
+
+

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HarianActivity">
+
+    <TextView
+        android:id="@+id/tv_laporanbulanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Laporan Harian"
+        android:textColor="@color/birutua"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:fontFamily="@font/feeding_a_moment" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDate"
+        app:layout_constraintVertical_bias="0.166">
+
+        <RelativeLayout
+            android:layout_width="520dp"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lvLaporHarian"
+                android:layout_width="530dp"
+                android:layout_height="360dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.767" />
+
+            <TextView
+                android:id="@+id/textViewNamaPelapor"
+                android:layout_width="85dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Nama Pelapor"
+                android:textAlignment="center"
+                android:textColor="@color/birutua"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.121" />
+
+            <TextView
+                android:id="@+id/textViewBarang"
+                android:layout_width="85dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/textViewNamaPelapor"
+                android:gravity="center_vertical"
+                android:text="Nama Fasilitas"
+                android:textAlignment="center"
+                android:textColor="@color/birutua"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewNamaPelapor"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.122" />
+
+            <TextView
+                android:id="@+id/textViewArea"
+                android:layout_width="85dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/textViewBarang"
+                android:gravity="center_vertical"
+                android:text="Lokasi"
+                android:textAlignment="center"
+                android:textColor="@color/birutua"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewBarang"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.122" />
+
+            <TextView
+                android:id="@+id/textViewJam"
+                android:layout_width="85dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/textViewArea"
+                android:gravity="center_vertical"
+                android:text="Waktu"
+                android:textAlignment="center"
+                android:textColor="@color/birutua"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewArea"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.122" />
+
+            <TextView
+                android:id="@+id/textViewTanggal"
+                android:layout_width="85dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/textViewJam"
+                android:gravity="center_vertical"
+                android:text="Tanggal"
+                android:textAlignment="center"
+                android:textColor="@color/birutua"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewJam"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.122" />
+
+            <TextView
+                android:id="@+id/textViewStatuss"
+                android:layout_width="85dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/textViewTanggal"
+                android:gravity="center_vertical"
+                android:text="Status"
+                android:textAlignment="center"
+                android:textColor="@color/birutua"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewTanggal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.121" />
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/birutua"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/mSearchField"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="Cari Fasilitas..."
+            android:inputType="textPersonName"
+            android:textColorHint="@color/putih" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="137dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btndatepick"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_laporanbulanan" />
+</android.support.constraint.ConstraintLayout>

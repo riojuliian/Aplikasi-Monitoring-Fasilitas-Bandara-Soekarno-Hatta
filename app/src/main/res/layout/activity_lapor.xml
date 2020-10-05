@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".LaporActivity">
+
+        <TextView
+            android:id="@+id/tv_pelaporan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pelaporan"
+            android:textColor="@color/birutua"
+            android:textSize="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:fontFamily="@font/feeding_a_moment" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Fasilitas"
+            android:textColor="@color/birutua"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pelaporan" />
+
+        <Spinner
+            android:id="@+id/cb_namabarang"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/birutua"
+            android:spinnerMode="dialog"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_pelaporan" />
+
+        <TextView
+            android:id="@+id/tv_lokasi"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:text="Lokasi"
+            android:textColor="@color/birutua"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_nama"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+
+        <TextView
+            android:id="@+id/tv_lokasi_isi"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:text="Lokasinya"
+            android:textColor="@color/birutua"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/cb_namabarang"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cb_namabarang"
+            app:layout_constraintTop_toBottomOf="@+id/cb_namabarang" />
+
+        <TextView
+            android:id="@+id/tv_namaPelapor"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:text="Pelapor"
+            android:textColor="@color/birutua"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_lokasi"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_lokasi"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lokasi" />
+
+        <TextView
+            android:id="@+id/tv_isiNamaPelapor"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:text="NamaPelapor"
+            android:textColor="@color/birutua"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_lokasi_isi"
+            app:layout_constraintLeft_toRightOf="@id/tv_isiNamaPelapor"
+            app:layout_constraintStart_toStartOf="@+id/tv_lokasi_isi"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lokasi_isi" />
+
+        <TextView
+            android:id="@+id/tv_tujuan"
+            android:layout_width="150dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:text="Tujuan"
+            android:textColor="@color/birutua"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_namaPelapor"
+            app:layout_constraintStart_toStartOf="@+id/tv_namaPelapor"
+            app:layout_constraintTop_toBottomOf="@+id/tv_namaPelapor" />
+
+        <Spinner
+            android:id="@+id/cb_Tujuan"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/birutua"
+            android:entries="@array/Tujuan_array"
+            android:spinnerMode="dialog"
+            app:layout_constraintEnd_toEndOf="@+id/tv_isiNamaPelapor"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_isiNamaPelapor"
+            app:layout_constraintTop_toBottomOf="@+id/tv_isiNamaPelapor" />
+
+        <TextView
+            android:id="@+id/tv_status_lapor"
+            android:layout_width="150dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            android:text="Status Lapor"
+            android:textColor="@color/birutua"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_tujuan"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_tujuan"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tujuan" />
+
+        <Spinner
+            android:id="@+id/cb_status_lapor"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/birutua"
+            android:entries="@array/Tujuan_array"
+            android:spinnerMode="dialog"
+            app:layout_constraintEnd_toEndOf="@+id/cb_Tujuan"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cb_Tujuan"
+            app:layout_constraintTop_toBottomOf="@+id/tv_isiNamaPelapor" />
+
+        <EditText
+            android:id="@+id/et_pesan_isi"
+            android:layout_width="353dp"
+            android:layout_height="120dp"
+            android:background="@drawable/outline"
+            android:gravity="left"
+            android:hint=" Tulis Pesan/Keterangan disini.."
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:scrollbars="vertical"
+            android:textColor="@color/birutua"
+            android:textColorHint="@color/birutua"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/uploadPB"
+            app:layout_constraintStart_toStartOf="@+id/uploadPB"
+            app:layout_constraintTop_toBottomOf="@+id/uploadPB" />
+
+        <Button
+            android:id="@+id/btnkembalipelaporan"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnback"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btnlaporpelaporan"
+            app:layout_constraintTop_toBottomOf="@+id/et_pesan_isi" />
+
+
+        <Button
+            android:id="@+id/btnlaporpelaporan"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnlaporrr"
+            app:layout_constraintLeft_toRightOf="@+id/btnkembalipelaporan"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_pesan_isi" />
+
+        <Button
+            android:id="@+id/btnPilihGambar"
+            android:layout_width="112dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="52dp"
+            android:background="@color/birutua"
+            android:text="Pilih Gambar"
+            app:layout_constraintEnd_toEndOf="@+id/tv_status_lapor"
+            app:layout_constraintHorizontal_bias="0.368"
+            app:layout_constraintStart_toStartOf="@+id/tv_status_lapor"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tujuan" />
+
+        <TextView
+            android:id="@+id/tv_before"
+            android:layout_width="162dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:text="Before Maintenance"
+            android:textAlignment="center"
+            android:textColor="@color/birutua"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/cb_status_lapor"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cb_status_lapor"
+            app:layout_constraintTop_toBottomOf="@+id/cb_status_lapor" />
+
+        <ImageView
+            android:id="@+id/img_BeforeMT"
+            android:layout_width="289dp"
+            android:layout_height="184dp"
+            android:layout_above="@id/progress_bar"
+            android:layout_below="@id/tv_isiNamaPelapor"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:contentDescription="TODO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.579"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPilihGambar" />
+
+        <ProgressBar
+            android:id="@+id/uploadPB"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_BeforeMT" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

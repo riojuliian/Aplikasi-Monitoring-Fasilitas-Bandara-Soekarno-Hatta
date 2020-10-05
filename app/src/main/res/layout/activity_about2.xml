@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundpanjang"
+        tools:context=".AboutActivity2">
+
+        <ImageView
+            android:id="@+id/imgheader"
+            android:layout_width="351dp"
+            android:layout_height="179dp"
+            android:src="@drawable/logohalaman"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imgabout"
+            android:layout_width="351dp"
+            android:layout_height="179dp"
+            android:layout_marginTop="48dp"
+            android:background="@color/putih"
+            android:src="@drawable/about"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgheader" />
+
+        <ImageView
+            android:id="@+id/imgweb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/website"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_web"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgabout" />
+
+        <TextView
+            android:id="@+id/tv_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="www.angkasapura2.co.id"
+            android:textColor="@color/birutua"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imgweb"
+            app:layout_constraintLeft_toRightOf="@id/imgweb"
+            app:layout_constraintTop_toTopOf="@id/imgweb"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imgig"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="208dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/instagram"
+            app:layout_constraintLeft_toRightOf="@id/tv_web"
+            app:layout_constraintRight_toLeftOf="@+id/tv_web"
+            app:layout_constraintTop_toBottomOf="@+id/imgabout" />
+
+        <TextView
+            android:id="@+id/tv_ig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="angkasapura2"
+            android:textColor="@color/birutua"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imgig"
+            app:layout_constraintLeft_toRightOf="@id/imgig"
+            app:layout_constraintTop_toTopOf="@id/imgig"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imgfb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/facebook"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_fb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgabout" />
+
+        <TextView
+            android:id="@+id/tv_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Angkasa Pura II"
+            android:textColor="@color/birutua"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imgfb"
+            app:layout_constraintLeft_toRightOf="@id/imgfb"
+            app:layout_constraintTop_toTopOf="@id/imgfb"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imgtwit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/twitter"
+            app:layout_constraintBottom_toBottomOf="@+id/imgfb"
+            app:layout_constraintRight_toLeftOf="@+id/tv_twit"
+            app:layout_constraintStart_toEndOf="@+id/tv_fb"
+            app:layout_constraintTop_toTopOf="@+id/imgfb"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_twit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Angkasa Pura II"
+            android:textColor="@color/birutua"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imgtwit"
+            app:layout_constraintLeft_toRightOf="@id/imgtwit"
+            app:layout_constraintTop_toTopOf="@id/imgtwit"
+            app:layout_constraintVertical_bias="1.0" />
+        <TextView
+            android:id="@+id/tv_pengembang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:text="   Pengembang :   "
+            android:textColor="@color/putih"
+            android:background="@color/birutua"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgabout" />
+
+        <ImageView
+            android:id="@+id/foto1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/rio"
+            app:layout_constraintTop_toBottomOf="@id/tv_pengembang"
+            app:layout_constraintRight_toLeftOf="@id/foto2"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/foto2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/khoderi"
+            app:layout_constraintTop_toBottomOf="@id/tv_pengembang"
+            app:layout_constraintLeft_toRightOf="@id/foto1"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/nama1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rio Julian Aziz P"
+            android:textStyle="bold"
+            android:textColor="@color/birutua"
+            app:layout_constraintTop_toBottomOf="@id/foto1"
+            app:layout_constraintLeft_toLeftOf="@id/foto1"
+            app:layout_constraintRight_toRightOf="@id/foto1"/>
+
+        <TextView
+            android:id="@+id/nim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21120116120011"
+            android:textStyle="bold"
+            android:textColor="@color/birutua"
+            app:layout_constraintTop_toBottomOf="@id/nama1"
+            app:layout_constraintLeft_toLeftOf="@id/nama1"
+            app:layout_constraintRight_toRightOf="@id/nama1"/>
+
+        <TextView
+            android:id="@+id/nama2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muhamad Khoderi"
+            android:textStyle="bold"
+            android:textColor="@color/birutua"
+            app:layout_constraintTop_toBottomOf="@id/foto2"
+            app:layout_constraintLeft_toLeftOf="@id/foto2"
+            app:layout_constraintRight_toRightOf="@id/foto2"/>
+        <TextView
+            android:id="@+id/nim2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21120116130041"
+            android:textStyle="bold"
+            android:textColor="@color/birutua"
+            app:layout_constraintTop_toBottomOf="@id/nama2"
+            app:layout_constraintLeft_toLeftOf="@id/nama2"
+            app:layout_constraintRight_toRightOf="@id/nama2"/>
+
+        <ImageView
+            android:id="@+id/foto3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/hisyam"
+            app:layout_constraintTop_toBottomOf="@id/nim1"
+            app:layout_constraintRight_toLeftOf="@id/foto4"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/foto4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/shodiq"
+            app:layout_constraintTop_toBottomOf="@id/nim2"
+            app:layout_constraintLeft_toRightOf="@id/foto1"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/nama3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hisyam Pohan"
+            android:textStyle="bold"
+            android:textColor="@color/birutua"
+            app:layout_constraintTop_toBottomOf="@id/foto3"
+            app:layout_constraintLeft_toLeftOf="@id/foto3"
+            app:layout_constraintRight_toRightOf="@id/foto3"/>
+
+        <TextView
+            android:id="@+id/nim3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21120116140045"
+            android:textStyle="bold"
+            android:textColor="@color/birutua"
+            app:layout_constraintTop_toBottomOf="@id/nama3"
+            app:layout_constraintLeft_toLeftOf="@id/nama3"
+            app:layout_constraintRight_toRightOf="@id/nama3"/>
+
+        <TextView
+            android:id="@+id/nama4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muhammad Jafar Shodiq"
+            android:textStyle="bold"
+            android:textColor="@color/birutua"
+            app:layout_constraintTop_toBottomOf="@id/foto4"
+            app:layout_constraintLeft_toLeftOf="@id/foto4"
+            app:layout_constraintRight_toRightOf="@id/foto4"/>
+        <TextView
+            android:id="@+id/nim4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21120116130052"
+            android:textStyle="bold"
+            android:textColor="@color/birutua"
+            app:layout_constraintTop_toBottomOf="@id/nama4"
+            app:layout_constraintLeft_toLeftOf="@id/nama4"
+            app:layout_constraintRight_toRightOf="@id/nama4"/>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

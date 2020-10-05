@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@drawable/backgroundmainmenu"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="350dp"
+            android:layout_height="167dp"
+            android:src="@drawable/logohalaman"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/tv_getNamaLogin3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Nama"
+            android:textColor="@color/putih"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <Button
+            android:id="@+id/btndaftarlaporan"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btndaftarlaporan"
+            app:layout_constraintEnd_toStartOf="@+id/btnlaporperbaikan"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+
+        <Button
+            android:id="@+id/btnlaporperbaikan"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/btnlaporperbaikan"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+
+        <Button
+            android:id="@+id/btnabout"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btnabout"
+            app:layout_constraintEnd_toEndOf="@+id/btndaftarlaporan"
+            app:layout_constraintStart_toStartOf="@+id/btndaftarlaporan"
+            app:layout_constraintTop_toBottomOf="@+id/btndaftarlaporan"></Button>
+
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btnkeluar"
+            app:layout_constraintEnd_toEndOf="@+id/btnlaporperbaikan"
+            app:layout_constraintStart_toStartOf="@+id/btnlaporperbaikan"
+            app:layout_constraintTop_toBottomOf="@+id/btnlaporperbaikan"></Button>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

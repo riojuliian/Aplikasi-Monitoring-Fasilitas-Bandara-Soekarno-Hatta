@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="birutua">#1067a7</color>
+    <color name="birutuatransparan">#891067a7</color>
+    <color name="putih">#ebf5ef</color>
+    <color name="colorMantap">#ebf5ef</color>
+    <color name="transparan">#75ebf5ef</color>
+    <color name="color1">#b90560a3</color>
+    <color name="color2">#b9669fde</color>
+    <color name="color3">#b9f3ca04</color>
+    <color name="color4">#b9e05715</color>
+    <color name="colorPutih">#f5ffffff</color>
+</resources>

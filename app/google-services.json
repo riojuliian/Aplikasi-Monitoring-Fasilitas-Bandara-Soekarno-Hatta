@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "204070315745",
+    "firebase_url": "https://kpangkasapura2.firebaseio.com",
+    "project_id": "kpangkasapura2",
+    "storage_bucket": "kpangkasapura2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204070315745:android:35fb4339f13e11fd",
+        "android_client_info": {
+          "package_name": "com.example.tekkomundip.kpangkasapura2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204070315745-9j8j549di0k7v534nsa86i44qeuob7df.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tekkomundip.kpangkasapura2",
+            "certificate_hash": "e08a8dfa2705ab9da4f2fdf27a4de1322da5ce16"
+          }
+        },
+        {
+          "client_id": "204070315745-cuu985rvn1cfef7b65lqi3h5bl1krfi1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAilg-VkMPZDIxnKRH_cZvI5m6sv35g84k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204070315745-cuu985rvn1cfef7b65lqi3h5bl1krfi1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LihatBarangActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="458dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDate"
+        app:layout_constraintVertical_bias="0.166">
+
+        <RelativeLayout
+            android:layout_width="365dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewNamaBrg"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:text="Nama Fasilitas"
+                android:textAlignment="center"
+                android:textColor="@color/birutua"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewLokasi"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/tvStatusBrg"
+                android:layout_marginStart="87dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:text="Lokasi Spesifik"
+                android:textAlignment="center"
+                android:textColor="@color/birutua"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewLocSpesifik"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@+id/textViewLokasi"
+                android:text="Status"
+                android:textAlignment="center"
+                android:textColor="@color/birutua"
+                android:textStyle="bold"
+                 />
+
+            <TextView
+                android:id="@+id/tvStatusBrg"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@+id/textViewNamaBrg"
+                android:gravity="center_vertical"
+                android:text="Lokasi"
+                android:textAlignment="center"
+                android:textColor="@color/birutua"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/ListBarang"
+                android:layout_width="365dp"
+                android:layout_height="257dp"
+                android:layout_below="@+id/textViewLokasi"
+                android:layout_marginTop="-6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="56dp" />
+
+
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_daftarbarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Fasilitas"
+        android:textSize="50dp"
+        android:textColor="@color/birutua"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:fontFamily="@font/feeding_a_moment" />
+
+    <TextView
+        android:id="@+id/textViewTerminal"
+        android:layout_width="114dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/birutua"
+        android:textSize="20dp"
+        android:text="Lokasi"
+        android:textAlignment="center"
+        android:textColor="@color/putih"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <Button
+        android:id="@+id/btnkembalilihatbarang"
+        android:layout_width="159dp"
+        android:layout_height="52dp"
+        android:background="@drawable/btnlaporrr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

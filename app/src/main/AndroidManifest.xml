@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tekkomundip.kpangkasapura2">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_fix"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_fix"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity3" />
+        <activity android:name=".LaporActivity" />
+        <activity android:name=".BulananActivity" />
+        <activity android:name=".TahunanActivity" />
+        <activity android:name=".HarianActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".LihatBarangActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Login1Activity" />
+        <activity android:name=".Login2Activity" />
+        <activity android:name=".BarangList" />
+        <activity android:name=".PelaporList" />
+        <activity android:name=".PerbaikanActivity" />
+        <activity android:name=".LaporPerbaikanActivity" />
+        <activity android:name=".LaporanUnitActivity" />
+        <activity android:name=".LaporanTeknisiActivity" />
+        <activity android:name=".LihatBarangSummary" />
+        <activity android:name=".AboutActivity2" />
+        <activity android:name=".AboutActivity3" />
+        <activity android:name=".PerbaikanActivity2" />
+        <activity android:name=".Login3Activity"></activity>
+    </application>
+
+</manifest>
